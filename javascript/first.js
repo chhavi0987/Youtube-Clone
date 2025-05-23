@@ -1,6 +1,6 @@
 const videoCardContainer= document.querySelector(".video-wrapper")
 
-let api_key="AIzaSyBdUmjx7RXCzmB0RNdysf0y41IdvN4oxR4"
+let api_key=API_key
 let video_http=  "https://www.googleapis.com/youtube/v3/videos?"
 let channel_http= "https://www.googleapis.com/youtube/v3/channels?"
 
