@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(217, 214, 210, 0.799);
+        }
+        #video-container{
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+
+    </div>
+    <script>
+        const embedHtml=sessionStorage.getItem("videoEmbedHtml")
+        if(embedHtml){
+            const playerContainer=document.createElement("div")
+            playerContainer.innerHTML = embedHtml
+
+            document.getElementById("video-container").appendChild(playerContainer)
+        }
+
+        else{
+            alert("video embed not found")
+        }
+    </script>
+</body>
+</html>
