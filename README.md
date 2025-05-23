@@ -1,2 +1,2 @@
-# u-tube-clone
-a replica of utube
+# the project is utube-clone.
+# a simple and easy replica of utube 
